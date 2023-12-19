@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useRef } from 'react';
+import Link from 'next/link';
 import {
   FaHtml5,
   FaPhp,
@@ -8,6 +9,7 @@ import {
   FaCss3,
   FaVuejs,
   FaReact,
+  FaGithub,
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { DiMysql, DiJqueryLogo } from 'react-icons/di';
@@ -28,81 +30,81 @@ const projectsData = [
     id: 1,
     title: 'Attendance Web Company',
     description: (
-      <div className="flex gap-3">
+      <div className="flex gap-3 text-4xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaBootstrap className="text-purple-600" />{' '}
         <FaPhp className="text-sky-800" />{' '}
-        <IoLogoJavascript className="text-yellow-300" />{' '}
+        <IoLogoJavascript className="text-yellow-400" />{' '}
         <DiMysql className="text-sky-800" />{' '}
         <DiJqueryLogo className="text-sky-950" />
       </div>
     ),
     image: '/images/projects/login.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/ikhsanfd1/company-website.github.io',
+    previewUrl: 'https://github.com/ikhsanfd1/company-website.github.io',
   },
   {
     id: 2,
     title: 'CamilanOi Shop Web',
     description: (
-      <div className="flex gap-3">
+      <div className="flex gap-3 text-4xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
-        <IoLogoJavascript className="text-yellow-300" />{' '}
+        <IoLogoJavascript className="text-yellow-400" />{' '}
         <FaVuejs className="text-green-500" />
       </div>
     ),
     image: '/images/projects/vue_1.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/ikhsanfd1/kripik-shop.github.io',
+    previewUrl: 'https://github.com/ikhsanfd1/kripik-shop.github.io',
   },
   {
     id: 3,
     title: 'Story App + Firebase Storage, Cloud & Hosting',
     description: (
-      <div className="flex gap-3">
+      <div className="flex gap-3 text-4xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
-        <IoLogoJavascript className="text-yellow-300" />{' '}
+        <IoLogoJavascript className="text-yellow-400" />{' '}
         <FaSass className="text-pink-500" />{' '}
         <FaBootstrap className="text-purple-600" />{' '}
-        <SiWebpack className="text-sky-700" />{' '}
+        <SiWebpack className="text-blue-600" />{' '}
         <SiFirebase className="text-yellow-400" />
       </div>
     ),
     image: '/images/projects/Story_App_device_all.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/ikhsanfd1/story-app',
+    previewUrl: 'https://github.com/ikhsanfd1/story-app',
   },
   {
     id: 4,
     title: 'Restaurants App PWA + Testing Optimized',
     description: (
-      <div className="flex gap-3">
+      <div className="flex gap-3 text-4xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
-        <IoLogoJavascript className="text-yellow-300" />{' '}
+        <IoLogoJavascript className="text-yellow-400" />{' '}
         <FaSass className="text-pink-500" />{' '}
-        <SiWebpack className="text-sky-700" />{' '}
+        <SiWebpack className="text-blue-600" />{' '}
         <SiJest className="text-purple-900" />
       </div>
     ),
     image: '/images/projects/dicoding-expert.png',
     tag: ['All', 'Mobile'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/ikhsanfd1/restaurants-app-pwa',
+    previewUrl: 'https://restaurants-apps-pwa.vercel.app/',
   },
   {
     id: 5,
     title: 'Personal Notes App React + Vite',
     description: (
-      <div className="flex gap-3">
+      <div className="flex gap-3 text-4xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
-        <IoLogoJavascript className="text-yellow-300" />{' '}
+        <IoLogoJavascript className="text-yellow-400" />{' '}
         <FaSass className="text-pink-500" />{' '}
         <FaReact className="text-blue-500" />{' '}
         <SiVite className="text-yellow-400" />
@@ -110,17 +112,17 @@ const projectsData = [
     ),
     image: '/images/projects/Personal_App_device_all.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/ikhsanfd1/notes-app',
+    previewUrl: 'https://wow-notes-app.netlify.app/',
   },
   {
     id: 6,
     title: 'Dicoding Forum App + Testing Optimized',
     description: (
-      <div className="flex gap-3">
+      <div className="flex gap-3 text-4xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
-        <IoLogoJavascript className="text-yellow-300" />{' '}
+        <IoLogoJavascript className="text-yellow-400" />{' '}
         <FaSass className="text-pink-500" />{' '}
         <FaReact className="text-blue-500" />{' '}
         <SiVite className="text-yellow-400" />{' '}
@@ -130,8 +132,8 @@ const projectsData = [
     ),
     image: '/images/projects/Forum_App_device_all.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/ikhsanfd1/dicoding-forum-app',
+    previewUrl: 'https://dicoding-forum-app-six.vercel.app/',
   },
 ];
 
@@ -195,6 +197,16 @@ const ProjectsSection = () => {
           </motion.li>
         ))}
       </ul>
+      <div className="flex justify-center mt-24 items-center">
+        <a
+          href="https://github.com/ikhsanfd1"
+          target="_blank"
+          className="flex bg-[#f45b6a] hover:bg-red-400 p-3 gap-2 text-[#231942] rounded-lg"
+        >
+          <FaGithub className="text-xl" />
+          See All
+        </a>
+      </div>
     </section>
   );
 };
