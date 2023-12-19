@@ -30,7 +30,7 @@ const projectsData = [
     id: 1,
     title: 'Attendance Web Company',
     description: (
-      <div className="flex gap-3 text-4xl">
+      <div className="flex gap-3 text-2xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaBootstrap className="text-purple-600" />{' '}
         <FaPhp className="text-sky-800" />{' '}
@@ -48,7 +48,7 @@ const projectsData = [
     id: 2,
     title: 'CamilanOi Shop Web',
     description: (
-      <div className="flex gap-3 text-4xl">
+      <div className="flex gap-3 text-2xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
         <IoLogoJavascript className="text-yellow-400" />{' '}
@@ -64,7 +64,7 @@ const projectsData = [
     id: 3,
     title: 'Story App + Firebase Storage, Cloud & Hosting',
     description: (
-      <div className="flex gap-3 text-4xl">
+      <div className="flex gap-3 text-2xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
         <IoLogoJavascript className="text-yellow-400" />{' '}
@@ -83,7 +83,7 @@ const projectsData = [
     id: 4,
     title: 'Restaurants App PWA + Testing Optimized',
     description: (
-      <div className="flex gap-3 text-4xl">
+      <div className="flex gap-3 text-2xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
         <IoLogoJavascript className="text-yellow-400" />{' '}
@@ -101,7 +101,7 @@ const projectsData = [
     id: 5,
     title: 'Personal Notes App React + Vite',
     description: (
-      <div className="flex gap-3 text-4xl">
+      <div className="flex gap-3 text-2xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
         <IoLogoJavascript className="text-yellow-400" />{' '}
@@ -119,7 +119,7 @@ const projectsData = [
     id: 6,
     title: 'Dicoding Forum App + Testing Optimized',
     description: (
-      <div className="flex gap-3 text-4xl">
+      <div className="flex gap-3 text-2xl">
         <FaHtml5 className="text-orange-400" />{' '}
         <FaCss3 className="text-blue-600" />{' '}
         <IoLogoJavascript className="text-yellow-400" />{' '}
