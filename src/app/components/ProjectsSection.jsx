@@ -7,9 +7,9 @@ import {
   FaSass,
   FaBootstrap,
   FaCss3,
-  FaVuejs,
   FaReact,
   FaGithub,
+  FaNodeJs,
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { DiMysql, DiJqueryLogo } from 'react-icons/di';
@@ -20,6 +20,9 @@ import {
   SiVitest,
   SiCypress,
   SiJest,
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
 } from 'react-icons/si';
 import ProjectCard from './ProjectCard';
 import ProjectTag from './ProjectTag';
@@ -46,19 +49,20 @@ const projectsData = [
   },
   {
     id: 2,
-    title: 'CamilanOi Shop Web',
+    title: 'MERN Blog',
     description: (
       <div className="flex gap-3 text-2xl">
-        <FaHtml5 className="text-orange-400" />{' '}
-        <FaCss3 className="text-blue-600" />{' '}
-        <IoLogoJavascript className="text-yellow-400" />{' '}
-        <FaVuejs className="text-green-500" />
+        <SiMongodb className="text-green-600" />{' '}
+        <SiExpress className="text-black" />
+        <FaReact className="text-blue-500" />{' '}
+        <FaNodeJs className="text-green-500" />{' '}
+        <SiTailwindcss className="text-blue-400" />
       </div>
     ),
-    image: '/images/projects/vue_1.png',
+    image: '/images/projects/mern-blog.png',
     tag: ['All', 'Web'],
-    gitUrl: 'https://github.com/ikhsanfd1/kripik-shop.github.io',
-    previewUrl: 'https://github.com/ikhsanfd1/kripik-shop.github.io',
+    gitUrl: 'https://github.com/ikhsanfd1/mern-api',
+    previewUrl: 'https://github.com/ikhsanfd1/MERN-blog',
   },
   {
     id: 3,
