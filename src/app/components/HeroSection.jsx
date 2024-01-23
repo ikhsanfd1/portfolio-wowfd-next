@@ -34,7 +34,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-
+          {/*  */}
           <div>
             <Link
               href="https://mail.google.com/mail/u/0/#search/dilah80888%40gmail.com?compose=new"

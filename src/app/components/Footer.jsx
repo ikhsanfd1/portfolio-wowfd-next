@@ -2,6 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
+    //
     <footer className="footer border z-10 border-t-[#231942] border-l-transparent border-r-transparent text-[#231942]">
       <div className="container p-12 flex justify-between">
         <span>Ikhsan FD</span>

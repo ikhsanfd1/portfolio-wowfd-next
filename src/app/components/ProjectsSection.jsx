@@ -10,6 +10,7 @@ import {
   FaReact,
   FaGithub,
   FaNodeJs,
+  FaLaravel,
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { DiMysql, DiJqueryLogo } from 'react-icons/di';
@@ -103,21 +104,22 @@ const projectsData = [
   },
   {
     id: 5,
-    title: 'Personal Notes App React + Vite',
+    title: 'Portal Berita Laract',
     description: (
       <div className="flex gap-3 text-2xl">
         <FaHtml5 className="text-orange-400" />{' '}
-        <FaCss3 className="text-blue-600" />{' '}
+        <FaLaravel className="text-red-500" />{' '}
         <IoLogoJavascript className="text-yellow-400" />{' '}
-        <FaSass className="text-pink-500" />{' '}
-        <FaReact className="text-blue-500" />{' '}
+        <SiTailwindcss className="text-blue-600" />{' '}
+        <FaReact className="text-blue-600" />{' '}
         <SiVite className="text-yellow-400" />
+        <DiMysql className="text-sky-800" />{' '}
       </div>
     ),
-    image: '/images/projects/Personal_App_device_all.png',
+    image: '/images/projects/laract.png',
     tag: ['All', 'Web'],
-    gitUrl: 'https://github.com/ikhsanfd1/notes-app',
-    previewUrl: 'https://wow-notes-app.netlify.app/',
+    gitUrl: 'https://github.com/ikhsanfd1/portal-berita',
+    previewUrl: 'https://github.com/ikhsanfd1/portal-berita',
   },
   {
     id: 6,

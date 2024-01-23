@@ -46,6 +46,7 @@ const Navbar = () => {
     scrolling ? '#f45b6a' : 'bg-transparent'
   }] bg-opacity-100`;
 
+  //
   return (
     <nav className={navbarClasses}>
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-10 py-2">
