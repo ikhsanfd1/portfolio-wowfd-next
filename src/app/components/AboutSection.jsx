@@ -23,10 +23,13 @@ const TAB_DATA = [
     id: 'education',
     content: (
       <ul className="list-disc pl-2 text-[#231942]">
-        <li>Bootcamp Dicoding Indonesia</li>
+        <li>
+          Frontend Developer Internship at magangjogja.com 3 month 2023-2024
+        </li>
+        <li>Bootcamp Dicoding Indonesia 3 month 2023</li>
         <li>
           Institut Teknologi dan Bisnis Swadharma || System Information,
-          Bachelor Degree
+          Bachelor Degree 2019-2023
         </li>
       </ul>
     ),
